@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aymen Ben Ali — Embedded Systems &amp; IoT Engineer</title>
+  <meta name="description" content="Electrical Engineering student specializing in embedded systems, IoT, and smart hardware solutions using STM32, ESP32, MQTT, and RF communication." />
+  <meta name="keywords" content="embedded systems engineer, IoT developer, STM32, ESP32, MQTT, KiCad, Tunisia, electrical engineering" />
+  <meta property="og:title" content="Aymen Ben Ali — Embedded Systems &amp; IoT Engineer" />
+  <meta property="og:description" content="Building intelligent embedded systems and connected hardware solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__logo">
+      <span class="nav__logo-bracket">[</span>
+      <span class="nav__logo-text">ABA</span>
+      <span class="nav__logo-bracket">]</span>
+    </div>
+    <ul class="nav__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav__cta">Start a Project</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Start a Project &rarr;</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__tag">
+          <span class="hero__tag-dot" aria-hidden="true"></span>
+          <span>Available for internships &amp; projects</span>
+        </div>
+
+        <h1 class="hero__name">Aymen<br /><em>Ben Ali</em></h1>
+
+        <p class="hero__role">
+          <span class="hero__role-comment" aria-hidden="true">// </span>Embedded Systems &amp; IoT Engineer
+        </p>
+
+        <p class="hero__sub">
+          I design hardware that thinks, communicates, and adapts &mdash; from STM32
+          microcontrollers to full-stack IoT dashboards. End-to-end: schematic to deployment.
+        </p>
+
+        <div class="hero__stats" aria-label="Key metrics">
+          <div class="hero__stat">
+            <span class="hero__stat-num">4+</span>
+            <span class="hero__stat-label">Systems Built</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">3</span>
+            <span class="hero__stat-label">Languages</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">RF&rarr;Cloud</span>
+            <span class="hero__stat-label">Full Stack</span>
+          </div>
+        </div>
+
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--primary">View My Systems</a>
+          <a href="#contact" class="btn btn--ghost">Let&rsquo;s Build Together &rarr;</a>
+        </div>
+
+        <div class="hero__tech-strip" aria-label="Core technologies">
+          <span>STM32</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>ESP32</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>MQTT</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>KiCad</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>Python</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>XBee RF</span><span class="dot" aria-hidden="true">&middot;</span>
+          <span>DALI</span>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__circuit">
+          <svg viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" class="circuit-svg">
+            <path d="M60 80 L200 80 L200 140" stroke="#00ff88" stroke-width="1.5" opacity="0.3"/>
+            <path d="M200 140 L320 140 L320 260" stroke="#00ff88" stroke-width="1.5" opacity="0.3"/>
+            <path d="M60 80 L60 300 L140 300" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+            <path d="M140 300 L140 420 L260 420" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+            <path d="M320 260 L320 380 L260 380 L260 420" stroke="#00ff88" stroke-width="1" opacity="0.2"/>
+            <path d="M200 80 L200 40 L360 40" stroke="#ff6b35" stroke-width="1" opacity="0.25"/>
+            <path d="M100 200 L200 200 L200 260 L320 260" stroke="#ff6b35" stroke-width="1" opacity="0.2"/>
+            <path d="M60 300 L60 460 L180 460" stroke="#00c4ff" stroke-width="1" opacity="0.15"/>
+            <circle cx="200" cy="80" r="4" fill="#00ff88" opacity="0.7"/>
+            <circle cx="200" cy="140" r="4" fill="#00ff88" opacity="0.5"/>
+            <circle cx="320" cy="140" r="4" fill="#00ff88" opacity="0.5"/>
+            <circle cx="320" cy="260" r="5" fill="#ff6b35" opacity="0.7"/>
+            <circle cx="140" cy="300" r="4" fill="#00ff88" opacity="0.4"/>
+            <circle cx="260" cy="420" r="4" fill="#00ff88" opacity="0.4"/>
+            <circle cx="60"  cy="300" r="3" fill="#00c4ff" opacity="0.5"/>
+            <rect x="150" y="200" width="100" height="100" rx="4" fill="#111118" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+            <text x="200" y="248" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#00ff88" opacity="0.9">STM32</text>
+            <text x="200" y="264" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#00ff88" opacity="0.6">F4 Series</text>
+            <line x1="150" y1="220" x2="130" y2="220" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="235" x2="130" y2="235" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="250" x2="130" y2="250" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="265" x2="130" y2="265" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="280" x2="130" y2="280" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="250" y1="220" x2="270" y2="220" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="250" y1="235" x2="270" y2="235" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="250" y1="250" x2="270" y2="250" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="250" y1="265" x2="270" y2="265" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="250" y1="280" x2="270" y2="280" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="175" y1="200" x2="175" y2="180" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="200" y1="200" x2="200" y2="180" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="225" y1="200" x2="225" y2="180" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="175" y1="300" x2="175" y2="320" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="200" y1="300" x2="200" y2="320" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="225" y1="300" x2="225" y2="320" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+            <line x1="80" y1="160" x2="100" y2="160" stroke="#00c4ff" stroke-width="1.5" opacity="0.5"/>
+            <line x1="104" y1="155" x2="104" y2="165" stroke="#00c4ff" stroke-width="2" opacity="0.6"/>
+            <line x1="108" y1="155" x2="108" y2="165" stroke="#00c4ff" stroke-width="2" opacity="0.6"/>
+            <line x1="108" y1="160" x2="128" y2="160" stroke="#00c4ff" stroke-width="1.5" opacity="0.5"/>
+            <line x1="340" y1="300" x2="355" y2="300" stroke="#ff6b35" stroke-width="1.5" opacity="0.5"/>
+            <rect x="355" y="295" width="20" height="10" rx="2" fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0.6"/>
+            <line x1="375" y1="300" x2="390" y2="300" stroke="#ff6b35" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="320" cy="260" r="8" fill="#ff6b35" opacity="0.12" class="pulse-ring"/>
+            <rect x="310" y="350" width="80" height="50" rx="3" fill="#0d1117" stroke="#ff6b35" stroke-width="1.2" opacity="0.7"/>
+            <text x="350" y="373" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#ff6b35" opacity="0.9">ESP32</text>
+            <text x="350" y="387" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#ff6b35" opacity="0.6">WiFi/BLE</text>
+            <line x1="380" y1="350" x2="395" y2="335" stroke="#ff6b35" stroke-width="1" opacity="0.5"/>
+            <line x1="395" y1="335" x2="390" y2="340" stroke="#ff6b35" stroke-width="1" opacity="0.5"/>
+            <line x1="395" y1="335" x2="400" y2="340" stroke="#ff6b35" stroke-width="1" opacity="0.5"/>
+            <path d="M400 330 Q410 325 400 320" stroke="#ff6b35" stroke-width="0.8" fill="none" opacity="0.4"/>
+            <path d="M403 327 Q418 320 403 313" stroke="#ff6b35" stroke-width="0.8" fill="none" opacity="0.25"/>
+            <rect x="30" y="360" width="70" height="45" rx="3" fill="#0d1117" stroke="#00c4ff" stroke-width="1.2" opacity="0.6"/>
+            <text x="65" y="381" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#00c4ff" opacity="0.9">XBee RF</text>
+            <text x="65" y="395" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00c4ff" opacity="0.5">868 MHz</text>
+            <circle cx="60" cy="60" r="4" fill="#00ff88" class="blink-1" opacity="0.8"/>
+            <circle cx="80" cy="60" r="4" fill="#ff6b35" class="blink-2" opacity="0.6"/>
+            <circle cx="100" cy="60" r="4" fill="#00c4ff" class="blink-3" opacity="0.7"/>
+            <text x="60" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#666680" opacity="0.7">PWR</text>
+            <text x="80" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#666680" opacity="0.7">TX</text>
+            <text x="100" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#666680" opacity="0.7">RX</text>
+          </svg>
+        </div>
+
+        <div class="hero__terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot red" aria-hidden="true"></span>
+            <span class="terminal__dot yellow" aria-hidden="true"></span>
+            <span class="terminal__dot green" aria-hidden="true"></span>
+            <span class="terminal__title">system_init.c</span>
+          </div>
+          <div class="terminal__body">
+            <pre class="terminal__code" id="terminalCode" aria-label="Code preview"></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-label="Scroll to explore">
+        <span>Scroll</span>
+        <div class="hero__scroll-line" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ═══════ ABOUT ═══════ -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__left reveal">
+            <div class="section-label">01 &frasl; About</div>
+            <h2 id="about-heading" class="section-title">The engineer<br />behind the circuit</h2>
+            <p class="about__bio">
+              I&rsquo;m an Electrical Engineering student with a sharp focus on embedded systems and
+              connected hardware. My work sits at the intersection of silicon and software &mdash; I
+              design circuits in KiCad, write bare-metal firmware in C, and pipe sensor data all
+              the way to a live web dashboard.
+            </p>
+            <p class="about__bio">
+              Where other engineers stop at the microcontroller, I keep going &mdash; through the
+              protocol layer, the RF medium, the cloud backend, and into the user-facing interface.
+              That end-to-end ownership is what makes my systems actually ship.
+            </p>
+            <div class="about__langs" aria-label="Languages spoken">
+              <div class="about__lang"><span class="about__lang-flag">&#127467;&#127479;</span><span>French</span><em>Native</em></div>
+              <div class="about__lang"><span class="about__lang-flag">&#127468;&#127463;</span><span>English</span><em>Fluent</em></div>
+              <div class="about__lang"><span class="about__lang-flag">&#127481;&#127475;</span><span>Arabic</span><em>Native</em></div>
+            </div>
+          </div>
+
+          <div class="about__right reveal">
+            <div class="about__card-grid">
+              <div class="about__card">
+                <div class="about__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Hardware First</h3>
+                <p>Every system starts from a schematic. PCB layout, component selection, signal integrity &mdash; these aren&rsquo;t afterthoughts.</p>
+              </div>
+              <div class="about__card">
+                <div class="about__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Protocol Fluent</h3>
+                <p>UART, SPI, I&sup2;C, MQTT, DALI, XBee RF &mdash; I speak the languages that make hardware components communicate reliably.</p>
+              </div>
+              <div class="about__card">
+                <div class="about__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Systems Thinker</h3>
+                <p>I model control loops in Simulink before writing a single line of firmware. Stability isn&rsquo;t luck &mdash; it&rsquo;s engineered in.</p>
+              </div>
+              <div class="about__card">
+                <div class="about__card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h3>Data-Driven</h3>
+                <p>Real-time dashboards, SQLite logging, MQTT pipelines &mdash; I make embedded data visible, queryable, and actionable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ SKILLS ═══════ -->
+    <section class="skills section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">02 &frasl; Skills</div>
+          <h2 id="skills-heading" class="section-title">The full stack &mdash;<br />from atom to API</h2>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-category reveal">
+            <div class="skill-category__header">
+              <span class="skill-category__icon" aria-hidden="true">&#x2B21;</span>
+              <h3>Microcontrollers &amp; SoCs</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">STM32 (F1 / F4)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="STM32 proficiency 90%">
+                  <div class="skill-item__fill" style="--skill-w:90%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">ESP32 (WiFi / BLE)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="ESP32 proficiency 88%">
+                  <div class="skill-item__fill" style="--skill-w:88%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Raspberry Pi / BeagleBone</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Raspberry Pi proficiency 80%">
+                  <div class="skill-item__fill" style="--skill-w:80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-category__header">
+              <span class="skill-category__icon" aria-hidden="true">&#x2B21;</span>
+              <h3>Communication Protocols</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">UART / SPI / I&sup2;C</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:95%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">MQTT (IoT broker)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:92%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">XBee / RF (868 MHz)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:85%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">DALI (IEC 62386)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:78%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-category__header">
+              <span class="skill-category__icon" aria-hidden="true">&#x2B21;</span>
+              <h3>Software &amp; Tooling</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">Python (IoT backend, Dash)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:88%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">C / Embedded C</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:85%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">MATLAB / Simulink</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:80%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Plotly Dash / SQLite</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:82%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="skill-category__header">
+              <span class="skill-category__icon" aria-hidden="true">&#x2B21;</span>
+              <h3>Hardware Design</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">KiCad (schematic + PCB)</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:83%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Analog circuit design</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:75%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Optocoupler / driver design</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                  <div class="skill-item__fill" style="--skill-w:78%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ PROJECTS ═══════ -->
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">03 &frasl; Projects</div>
+          <h2 id="projects-heading" class="section-title">Systems I&rsquo;ve shipped</h2>
+          <p class="section-sub">Not toy projects. Engineering problems solved end-to-end.</p>
+        </div>
+
+        <!-- FEATURED PROJECT -->
+        <article class="project project--featured reveal" aria-label="Featured: Smart Street Lighting">
+          <div class="project__content">
+            <div class="project__meta">
+              <span class="project__number">01</span>
+              <span class="project__tag">IoT &middot; RF &middot; Control Systems</span>
+              <span class="project__badge">Flagship</span>
+            </div>
+            <h3 class="project__title">Smart Street Lighting Network</h3>
+            <p class="project__problem">
+              <strong>Problem:</strong> Traditional street lighting wastes up to 40% of energy running at full
+              power regardless of ambient conditions, pedestrian presence, or time of night.
+            </p>
+            <p class="project__solution">
+              <strong>Solution:</strong> A distributed IoT mesh using XBee RF modules (868 MHz) connecting
+              luminaire-level nodes &mdash; each with ambient light sensing, motion detection, and STM32-controlled
+              PWM dimming. A central coordinator aggregates all data over MQTT and applies adaptive schedules
+              through a real-time dashboard.
+            </p>
+            <ul class="project__results" role="list">
+              <li>Adaptive dimming based on live LDR + PIR sensor fusion</li>
+              <li>RF mesh with sub-100ms inter-node latency</li>
+              <li>Live dashboard: node status, energy counters, fault alerts</li>
+              <li>SQLite log with CSV export and threshold-based alerting</li>
+            </ul>
+            <div class="project__stack" aria-label="Technologies">
+              <span>STM32</span><span>XBee 868MHz</span><span>MQTT</span><span>Python</span><span>Plotly Dash</span><span>SQLite</span>
+            </div>
+          </div>
+          <div class="project__visual" aria-hidden="true">
+            <div class="project__diagram">
+              <svg viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="80" r="22" fill="#0f1a14" stroke="#00ff88" stroke-width="1.5"/>
+                <text x="50" y="77" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">Node</text>
+                <text x="50" y="89" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">01</text>
+                <circle cx="170" cy="35" r="22" fill="#0f1a14" stroke="#00ff88" stroke-width="1.5"/>
+                <text x="170" y="32" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">Node</text>
+                <text x="170" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">02</text>
+                <circle cx="290" cy="80" r="22" fill="#0f1a14" stroke="#00ff88" stroke-width="1.5"/>
+                <text x="290" y="77" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">Node</text>
+                <text x="290" y="89" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">03</text>
+                <rect x="120" y="130" width="100" height="58" rx="6" fill="#0f1a14" stroke="#ff6b35" stroke-width="1.5"/>
+                <text x="170" y="157" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#ff6b35">Central Hub</text>
+                <text x="170" y="172" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#ff6b35" opacity="0.6">XBee Coord.</text>
+                <line x1="72" y1="92" x2="120" y2="143" stroke="#00ff88" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+                <line x1="170" y1="57" x2="170" y2="130" stroke="#00ff88" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+                <line x1="268" y1="92" x2="220" y2="143" stroke="#00ff88" stroke-width="1" stroke-dasharray="4 3" opacity="0.6"/>
+                <text x="88" y="113" font-family="JetBrains Mono" font-size="6" fill="#00ff88" opacity="0.5">868MHz RF</text>
+                <line x1="170" y1="188" x2="170" y2="222" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="3 2"/>
+                <rect x="105" y="222" width="130" height="38" rx="4" fill="#1a0f08" stroke="#ff6b35" stroke-width="1"/>
+                <text x="170" y="244" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#ff6b35">MQTT &rarr; Dashboard</text>
+                <text x="50" y="113" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#666680">PIR+LDR</text>
+                <text x="290" y="113" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#666680">PIR+LDR</text>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project reveal" aria-label="DALI LED Control System">
+          <div class="project__content">
+            <div class="project__meta">
+              <span class="project__number">02</span>
+              <span class="project__tag">Embedded &middot; Bus Protocol &middot; Power Electronics</span>
+            </div>
+            <h3 class="project__title">DALI LED Control System</h3>
+            <p class="project__problem">
+              <strong>Problem:</strong> Industrial lighting requires standardized, bidirectional digital
+              control over individually addressable fixtures &mdash; without per-fixture wiring complexity.
+            </p>
+            <p class="project__solution">
+              <strong>Solution:</strong> An ESP32-based DALI master with a custom optocoupler-isolated bus
+              interface. Full IEC&nbsp;62386 protocol stack implementation: individual addressing, group
+              control, scene management, and fault querying across 64 DALI slaves via a WebSocket-driven UI.
+            </p>
+            <ul class="project__results" role="list">
+              <li>Complete DALI protocol stack in C on ESP32</li>
+              <li>Galvanic isolation via optocoupler &mdash; clean logic/bus separation</li>
+              <li>Real-time WebSocket scene manager (dimming, scene recall)</li>
+              <li>Supports 64 individually addressable DALI ballasts</li>
+            </ul>
+            <div class="project__stack" aria-label="Technologies">
+              <span>ESP32</span><span>DALI IEC 62386</span><span>Optocoupler</span><span>C</span><span>WebSocket</span><span>KiCad</span>
+            </div>
+          </div>
+          <div class="project__visual" aria-hidden="true">
+            <div class="project__diagram">
+              <svg viewBox="0 0 300 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="60" width="80" height="50" rx="4" fill="#0d1117" stroke="#ff6b35" stroke-width="1.5"/>
+                <text x="50" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#ff6b35">ESP32</text>
+                <text x="50" y="96" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#ff6b35" opacity="0.6">DALI Master</text>
+                <rect x="125" y="67" width="50" height="36" rx="3" fill="#0d1117" stroke="#00c4ff" stroke-width="1.2"/>
+                <text x="150" y="83" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00c4ff">OPTO</text>
+                <text x="150" y="96" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#00c4ff" opacity="0.6">Isolation</text>
+                <line x1="90" y1="85" x2="125" y2="85" stroke="#ff6b35" stroke-width="1.5"/>
+                <line x1="175" y1="85" x2="218" y2="85" stroke="#00ff88" stroke-width="2"/>
+                <line x1="218" y1="85" x2="218" y2="40" stroke="#00ff88" stroke-width="1.5"/>
+                <line x1="218" y1="85" x2="218" y2="130" stroke="#00ff88" stroke-width="1.5"/>
+                <line x1="218" y1="85" x2="258" y2="85" stroke="#00ff88" stroke-width="1.5"/>
+                <rect x="218" y="18" width="62" height="30" rx="3" fill="#0f1a14" stroke="#00ff88" stroke-width="1"/>
+                <text x="249" y="36" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">Slave 01</text>
+                <rect x="218" y="115" width="62" height="30" rx="3" fill="#0f1a14" stroke="#00ff88" stroke-width="1"/>
+                <text x="249" y="133" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#00ff88">Slave 02</text>
+                <rect x="258" y="70" width="32" height="30" rx="3" fill="#0f1a14" stroke="#00ff88" stroke-width="1"/>
+                <text x="274" y="88" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#00ff88">S03</text>
+                <text x="196" y="79" font-family="JetBrains Mono" font-size="6" fill="#00ff88" opacity="0.6">DALI Bus</text>
+                <circle cx="255" cy="168" r="6" fill="#ffdd00" opacity="0.7"/>
+                <circle cx="239" cy="168" r="6" fill="#ffdd00" opacity="0.4"/>
+                <circle cx="223" cy="168" r="6" fill="#ffdd00" opacity="0.2"/>
+                <text x="239" y="183" text-anchor="middle" font-family="JetBrains Mono" font-size="6" fill="#666680">LED Array</text>
+                <line x1="249" y1="145" x2="249" y2="162" stroke="#ffdd00" stroke-width="1" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- COMPACT PROJECTS ROW -->
+        <div class="projects__row">
+          <article class="project project--compact reveal" aria-label="IoT Dashboard">
+            <div class="project__meta">
+              <span class="project__number">03</span>
+              <span class="project__tag">Data &middot; Visualization</span>
+            </div>
+            <h3 class="project__title">Live IoT Data Dashboard</h3>
+            <p class="project__solution">
+              MQTT subscriber pipeline that ingests sensor telemetry, persists it in SQLite with
+              timestamped records, and renders it as a live multi-channel Plotly Dash interface.
+              Sub-second update latency, configurable alert thresholds, and CSV export.
+            </p>
+            <div class="project__stack">
+              <span>Python</span><span>MQTT</span><span>SQLite</span><span>Plotly Dash</span>
+            </div>
+          </article>
+
+          <article class="project project--compact reveal" aria-label="Real-time systems on SBC">
+            <div class="project__meta">
+              <span class="project__number">04</span>
+              <span class="project__tag">Linux &middot; Real-time</span>
+            </div>
+            <h3 class="project__title">Real-Time Systems on SBC</h3>
+            <p class="project__solution">
+              Deterministic sensor acquisition and control loop on Raspberry Pi and BeagleBone
+              using POSIX threading and hardware timers. Latency profiled with oscilloscope
+              validation down to microsecond precision.
+            </p>
+            <div class="project__stack">
+              <span>Raspberry Pi</span><span>BeagleBone</span><span>C / POSIX</span><span>MATLAB</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ EDUCATION ═══════ -->
+    <section class="education section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-label">04 &frasl; Education &amp; Timeline</div>
+          <h2 id="education-heading" class="section-title">Where it all started</h2>
+        </div>
+
+        <div class="timeline" role="list">
+          <div class="timeline__item reveal" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022 &mdash; Present</span>
+              <h3>B.Eng. Electrical Engineering</h3>
+              <p class="timeline__org">Engineering School &middot; Tunisia</p>
+              <p class="timeline__desc">Core curriculum: power electronics, signal processing, control theory,
+              embedded systems, and telecommunications. Final-year specialization in IoT and connected
+              embedded systems.</p>
+              <div class="timeline__tags">
+                <span>Control Theory</span><span>Signal Processing</span>
+                <span>Power Electronics</span><span>Microcontrollers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2023</span>
+              <h3>Smart Lighting System &mdash; Showcase Project</h3>
+              <p class="timeline__org">Academic Project &middot; STM32 + RF Mesh</p>
+              <p class="timeline__desc">Designed and built a mesh RF street lighting control system from PCB
+              schematic to live IoT dashboard. Selected as the cohort showcase project.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal" role="listitem">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024</span>
+              <h3>DALI Protocol R&amp;D Implementation</h3>
+              <p class="timeline__org">Research &amp; Development Project</p>
+              <p class="timeline__desc">Studied IEC 62386 standard, designed the hardware isolation stage,
+              and implemented the full DALI protocol stack on ESP32 with a web-based control interface.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--now reveal" role="listitem">
+            <div class="timeline__marker timeline__marker--pulse" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Now</span>
+              <h3>Seeking Internship &frasl; Junior Role</h3>
+              <p class="timeline__org">Available Immediately</p>
+              <p class="timeline__desc">Looking for embedded systems, IoT, or hardware engineering opportunities
+              where I can contribute real depth from day one.</p>
+              <a href="#contact" class="btn btn--primary btn--sm">Let&rsquo;s talk &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ VALUE PROPOSITION ═══════ -->
+    <section class="value section" id="value" aria-labelledby="value-heading">
+      <div class="container">
+        <div class="value__top reveal">
+          <div class="value__top-left">
+            <div class="section-label">05 &frasl; What I Can Build For You</div>
+            <h2 id="value-heading" class="section-title">Your embedded<br />problem, solved.</h2>
+          </div>
+          <div class="value__top-right">
+            <p>Whether you need a connected sensor node, a lighting protocol implementation, a real-time data
+            pipeline, or a full IoT prototype &mdash; I can take it from requirements to working hardware.</p>
+            <p>I don&rsquo;t just write firmware. I design the PCB, choose the right communication stack,
+            implement the backend, and deliver a system you can trust in the field.</p>
+          </div>
+        </div>
+
+        <div class="value__cards">
+          <div class="value__card reveal">
+            <div class="value__card-num" aria-hidden="true">01</div>
+            <h3>Connected Sensor Networks</h3>
+            <p>RF mesh or WiFi-based multi-node systems with real-time monitoring, fault detection, and remote configuration.</p>
+          </div>
+          <div class="value__card reveal">
+            <div class="value__card-num" aria-hidden="true">02</div>
+            <h3>Lighting Control Systems</h3>
+            <p>DALI or PWM-based smart lighting with dimming curves, scene management, and energy logging built in.</p>
+          </div>
+          <div class="value__card reveal">
+            <div class="value__card-num" aria-hidden="true">03</div>
+            <h3>IoT Dashboards &amp; Pipelines</h3>
+            <p>From MQTT broker to live web dashboard: persistent storage, real-time visualization, and alerting.</p>
+          </div>
+          <div class="value__card reveal">
+            <div class="value__card-num" aria-hidden="true">04</div>
+            <h3>Hardware Prototyping</h3>
+            <p>Schematic to PCB layout in KiCad, BOM optimization, and bring-up support for your embedded product.</p>
+          </div>
+        </div>
+
+        <div class="value__cta reveal">
+          <a href="#contact" class="btn btn--primary btn--lg">Let&rsquo;s build your system &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════ CONTACT ═══════ -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__left reveal">
+            <div class="section-label">06 &frasl; Contact</div>
+            <h2 id="contact-heading" class="section-title">Ready to start<br />your project?</h2>
+            <p class="contact__sub">Tell me what you&rsquo;re building. I&rsquo;ll tell you how I&rsquo;d
+            approach it &mdash; no strings attached.</p>
+
+            <div class="contact__info">
+              <div class="contact__info-item">
+                <span class="contact__info-label">Email</span>
+                <a href="mailto:aymen.benali@email.com" class="contact__info-value">aymen.benali@email.com</a>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">Location</span>
+                <span class="contact__info-value">Tunisia &mdash; Open to Remote</span>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">LinkedIn</span>
+                <a href="#" class="contact__info-value">linkedin.com/in/aymen-benali</a>
+              </div>
+              <div class="contact__info-item">
+                <span class="contact__info-label">GitHub</span>
+                <a href="#" class="contact__info-value">github.com/aymenbenali</a>
+              </div>
+            </div>
+
+            <div class="contact__availability">
+              <span class="contact__avail-dot" aria-hidden="true"></span>
+              <span>Available for internships, freelance, and full-time roles</span>
+            </div>
+          </div>
+
+          <div class="contact__right reveal">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Jean Dupont" autocomplete="name" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="hello@company.com" autocomplete="email" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">What are you building?</label>
+                <select id="subject" name="subject" class="form-input form-select" required aria-required="true">
+                  <option value="" disabled selected>Select a topic&hellip;</option>
+                  <option value="internship">Internship / Job Offer</option>
+                  <option value="freelance">Freelance / Contract Project</option>
+                  <option value="iot">IoT System Development</option>
+                  <option value="embedded">Embedded Firmware</option>
+                  <option value="hardware">PCB / Hardware Design</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project, timeline, and what success looks like&hellip;" rows="4" required aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <p class="form-note">I respond within 24 hours.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <span class="footer__logo">[ABA]</span>
+          <p>Embedded Systems &amp; IoT Engineer</p>
+        </div>
+        <div class="footer__right">
+          <p class="footer__copy">&copy; 2024 Aymen Ben Ali &middot; Built with vanilla HTML/CSS/JS</p>
+          <a href="#hero" class="footer__back" aria-label="Back to top">&uarr; Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
